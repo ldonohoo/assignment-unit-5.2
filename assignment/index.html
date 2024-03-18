@@ -3,10 +3,30 @@
   <head>
     <meta charset="utf-8">
     <title>Unit 5, Part 2 - HTML/CSS Practice</title>
+    <link rel="stylesheet" href="styles/stylesheet.css"/>
+    <!-- start links for fun google font used -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- end links for fun google font used -->
+    <link href="https://fonts.googleapis.com/css2?family=Proza+Libre:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <script src="scripts/record-store.js" defer></script>
   </head>
-  <body>
-    <h1>Unit 5, Part 2 - HTML/CSS Practice</h1>
-    <p>Look at my cool music page.</p>
+  <body class="record-background">
+    <header class="dark-green-theme 
+                   force-to-foreground">
+      <h1 class="center">Unit 5, Part 2 - HTML/CSS Practice</h1>
+      <h2 class="center 
+                 proza-libre-regular">Lisa's Record Shop</h2>
+    </header> 
+    <main class="light-gray-theme
+                 small-padding 
+                 force-to-foreground 
+                 border-lines">
+      <p>Look at my cool music page.<br><br><span class="italics smaller-font indent">
+        Warning: clicking the spinning record plays music</span>
+     </p>
+    </main>
+    <img class="spinning-record" src="images/record.png" alt="image of spinning record">
     <!-- Create an unordered list with any questions you have -->
   </body>
 </html>

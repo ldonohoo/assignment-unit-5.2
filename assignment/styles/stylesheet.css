@@ -1,0 +1,137 @@
+/*  Lisa Donohoo
+    Prime Academy
+    Tier 1 Week 5 
+    Assignment 5.2 */
+
+/*---body---*/
+
+body {
+    margin: 0;
+}
+
+/*---classes in alphabetical order---*/
+/* (keyframes & animations at end)   */
+
+.border-lines {
+    border-top: .3rem solid black;
+    border-bottom: .3rem solid black;
+}
+
+.center {
+    text-align: center;
+}
+
+.dark-green-theme {
+    background-color: rgb(25, 108, 18);
+    color: white;
+}
+
+/* used to bring banners to front to cover
+   spinning record    */
+.force-to-foreground {
+    display: block;
+    position: relative;
+    z-index: 1;
+} 
+
+.indent {
+    padding-left: 2rem;
+}
+
+.italics {
+    font-style: italic;
+}
+
+.light-gray-theme {
+    background-color: rgb(190, 190, 190);
+    height: 4rem;
+}
+
+.proza-libre-regular {
+    font-family: "Proza Libre", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: xxx-large;
+  }
+
+.record-background {
+    background-image: url(../images/record.png);
+    background-size: 25%;
+    background-repeat: repeat;
+    background-color: white;
+}
+
+.smaller-font {
+    font-size: smaller;
+}
+
+.small-padding {
+    padding: 1em;
+}
+
+/* class for the spinning record in the middle */
+.spinning-record {
+    display: block;
+    position: absolute;
+    width: 25%;
+    height: auto;
+    border-radius: 50%;
+    /* Wow to get it to stay in place relative to the background  
+       confused the heck out of me.  Finally figured out that I
+       need to vary the top offset by the width                  */
+    top: 25vw;
+    left: 24.96%; 
+    background-color: white;
+    animation: spin 5000ms linear infinite both;
+}
+
+.white-background-theme {
+    background-color: white;
+}
+
+/*---keyframes and animations---*/
+
+.playing {
+    animation: funky-colors 5000ms linear infinite alternate;
+}
+
+.spinning-record:hover {
+    background-color: rgb(200, 200, 200);
+}
+
+@keyframes spin {
+    from { rotate: 0deg; }
+    to { rotate: 360deg; }
+}
+
+@keyframes funky-colors {
+    0% {
+        rotate: 0deg;
+        background-color: rgb(248, 154, 154);
+    }
+    17% {
+        rotate: 60deg;
+        background-color: rgb(253, 206, 120);
+    }
+    34% {
+        rotate: 120deg;
+        background-color: rgb(253, 253, 133);
+    }
+    51% {
+        rotate: 180deg;
+        background-color: rgb(182, 255, 182);
+    }
+    68% {
+        rotate: 240deg;
+        background-color: rgb(133, 133, 255);
+    }
+    85% {
+        rotate: 300deg;
+        background-color: rgb(223, 178, 255);
+    }
+    100% {
+        rotate: 360deg;
+        background-color: rgb(255, 194, 255);
+    }
+}
+
